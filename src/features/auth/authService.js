@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = 'https://gray-gleaming-bat.cyclic.app/api/users/'
+const API_URL = 'https://plum-grumpy-ostrich.cyclic.app/api/users/'
 
 //CREAR USUARIO
 
