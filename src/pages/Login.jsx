@@ -59,7 +59,7 @@ export const Login = () => {
   return (
     <>
     <section className='heading'>
-        <h4> <FaSignInAlt />Inicia sesión </h4>
+        <h5> <FaSignInAlt  size={20} />  Inicia sesión </h5>
         <p> Inicia sesión en Oura Movies</p>
     </section>
     <section className='form'>
@@ -70,7 +70,7 @@ export const Login = () => {
             id='email' 
             name='email'
             value={email}
-            placeholder='Porfavor teclea tu correo'
+            placeholder='Ingresa tu correo'
             onChange={onChange}
             />
             </div>
@@ -80,7 +80,7 @@ export const Login = () => {
             id='password' 
             name='password'
             value={password}
-            placeholder='Porfavor teclea tu contraseña'
+            placeholder='Ingresa tu contraseña'
             onChange={onChange}
             />
             </div>

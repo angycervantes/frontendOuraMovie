@@ -64,8 +64,9 @@ export const Register = () => {
   return (
     <>
     <section className='heading'>
-        <h4> <FaUser />Registrar un usuario </h4>
-        <p> porfavor regristrate en Oura Movies</p>
+        
+     <h5>  <FaUser size={20} /> Registrar un usuario </h5>
+        <p> Oura Movies</p>
     </section>
     <section className='form'>
         <form onSubmit={onSubmit}>
@@ -75,7 +76,7 @@ export const Register = () => {
             id='email' 
             name='email'
             value={email}
-            placeholder='Porfavor teclea tu correo'
+            placeholder='Ingresa tu correo'
             onChange={onChange}
             />
             </div>
@@ -85,7 +86,7 @@ export const Register = () => {
             id='password' 
             name='password'
             value={password}
-            placeholder='Porfavor teclea tu contraseña'
+            placeholder='Ingresa tu contraseña'
             onChange={onChange}
             />
             </div>
@@ -95,7 +96,7 @@ export const Register = () => {
             id='password2' 
             name='password2'
             value={password2}
-            placeholder='Porfavor confirma tu contraseña'
+            placeholder='Confirma tu contraseña'
             onChange={onChange}
             />
             </div>
