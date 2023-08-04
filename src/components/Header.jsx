@@ -21,7 +21,7 @@ const Header = () => {
     <header className='header'>
         <div className='logo'>
            <img src={logo} width='20' />
-            <Link to='/'> <logo />Oura Movies </Link>
+            <Link to='/'>Oura Movies </Link>
         </div>
         <ul>
             {user ? 
