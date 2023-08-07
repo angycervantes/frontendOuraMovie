@@ -36,6 +36,7 @@ const Dashboard = () => {
     }
 
     console.log (movies)
+    
   return (
     <>
     <section className='heading'>
