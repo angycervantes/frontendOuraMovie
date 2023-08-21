@@ -5,6 +5,7 @@ import MovieForm from "../components/MovieForm"
 import Spinner from "../components/Spinner"
 import { getMovies, reset } from "../features/Movie/movieSlice"
 import MovieItem from "../components/MovieItem"
+import MyListMovie from "../components/MyListMovie"
 
 const Dashboard = () => {
 
@@ -45,15 +46,21 @@ const Dashboard = () => {
     </section>
 
     <MovieForm />
-  
-    <section className="content">
-      {movies.length > 0 ? (
-        <div className='tareas'>
-          {movies.map((movie)=>(
+    <MyListMovie />
+
+    <section className="">
+      <div className="card-group">
+        {movies.length > 0 ? (
+          <div className="card" style={{ maxWidth: '300px' }} >
+            {movies.map((movie)=>(
             <MovieItem key={movie._id} movie={movie} /> 
             ))}
-        </div>
-      ):(<h3> No hay películas que mostrar</h3>)}
+          </div>
+          ):(<h3> No hay películas que mostrar</h3>
+          )}
+
+      </div>
+
     </section>
     </>
   )
